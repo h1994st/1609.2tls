@@ -123,15 +123,15 @@ Internet-Draft   IEEE and ETSI Certificate Types for TLS  September 2018
 3.  Extension Overview
 
    To extend Client Hello and Server Hello messages, the
-   "extension_data" field of the "Certificate_Type_Extension" structue
-   defined in RFC7250 is used.  In order to negotiate the support of
-   IEEE 1609.2 or ETSI TS 103097 certificate-based authentication, the
-   clients and the servers MAY include the extension of type
-   "client_certificate_type" and "server_certificate_type" in the
-   extended Client Hello and "EncryptedExtensions".  The
-   "extension_data" field of this extension SHALL contain a list of
-   supported certificate types proposed by the client as provided in
-   figure below:
+   "extension_data" field of the ClientCertTypeExtension and the 
+   ServerCertTypeExtension structures defined in RFC7250 is used. 
+   In order to negotiate the support of IEEE 1609.2 or ETSI TS 
+   103097 certificate-based authentication, the clients and the 
+   servers MAY include the extension of type "client_certificate_type" 
+   and "server_certificate_type" in the extended Client Hello and 
+   "EncryptedExtensions".  The "extension_data" field of this 
+   extension SHALL contain a list of supported certificate types 
+   proposed by the client as provided in figure below:
 
 
      /* Managed by IANA */
