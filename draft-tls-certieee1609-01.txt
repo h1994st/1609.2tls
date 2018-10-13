@@ -92,7 +92,7 @@ Table of Contents
    the use of certificates specified either by the Institute of
    Electrical and Electronics Engineers (IEEE) [IEEE1609.2] or the
    European Telecommunications Standards Institute (ETSI) [TS103097].
-   It is worth to mention that ETSI TS 103097certificate is a profile of
+   It is worth to mention that ETSI TS 103097 certificate is a profile of
    IEEE 1609.2 certificate and it has the same data structure.  These
    standards are defined in order to secure communications in vehicular
    environments.  Existing authentication methods, such as X509 and Raw
@@ -343,7 +343,8 @@ Internet-Draft   IEEE and ETSI Certificate Types for TLS  September 2018
    In the case where the certificate_type is 1609Dot2, the
    CertificateVerify message is subject to the following constraints:
 
-      1) The algorithm field MUST be secp256r1 or secp384r1.
+      1) The algorithm field MUST be secp256r1 or secp384r1 as mandated 
+      by [IEEE1609.2].
 
       2) The signature field contains a Canonical Octet Encoding Rules
       (COER)-encoded Ieee1609Dot2Data of type signed where:
