@@ -528,11 +528,11 @@ Internet-Draft   IEEE and ETSI Certificate Types for TLS  September 2018
 
 10.  Acknowledgements
 
-   This document borrows a lot from
-   [draft-serhrouchni-tls-certieee1609-00].  The authors wish to thank
-   Eric Rescola and Ilari Liusvaara for their feedback and suggestions
-   on improving this document.  Thanks are due to Sean Turner for his
-   valuable and detailed comments.
+   The authors wish to thank Eric Rescola and Ilari Liusvaara for 
+   their feedback and suggestions on improving this document.  
+   Thanks are due to Sean Turner for his valuable and detailed 
+   comments. Special thanks to Nancy Cam-Winget and Maik Seewald 
+   for their guidance and support in the early stages of the draft. 
 
 11.  References
 
@@ -546,9 +546,10 @@ Internet-Draft   IEEE and ETSI Certificate Types for TLS  September 2018
    [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
               Requirement Levels", March 1997.
 
-   [RFC4492]  Blake-Wilson, S., Bolyard, N., Gupta, V., Hawk, C., and B.
-              Moeller, "Elliptic Curve Cryptography (ECC) Cipher Suites
-              for Transport Layer Security (TLS)", May 2006.
+   [RFC8422] Y. Nir, Y., Josefsson, S., Pegourie-Gonnard, M., 
+             Moeller, "Elliptic Curve Cryptography (ECC) Cipher Suites
+             for Transport Layer Security (TLS) Versions 1.2 and Earlier", 
+             August 2018.
 
    [RFC5246]  Dierks, T. and E. Rescorla, "The Transport Layer Security
               (TLS) Protocol Version 1.2", August 2008.
@@ -581,16 +582,6 @@ Internet-Draft   IEEE and ETSI Certificate Types for TLS  September 2018
 
 11.2.  Informative References
 
-   [draft-serhrouchni-tls-certieee1609-00]
-              KAISER, A., LABIOD, H., LONC, B., MSAHLI, M., and A.
-              SERHROUCHNI, "Transport Layer Security (TLS)
-              Authentication using ITS ETSI and IEEE certificates",
-              august 2017.
-
-
-
-
-
 
 
 
@@ -620,14 +611,6 @@ Internet-Draft   IEEE and ETSI Certificate Types for TLS  September 2018
 
 
 Appendix A.  Co-Authors
-
-   o  Nancy Cam-Winget
-      CISCO, USA
-      ncamwing@cisco.com
-
-   o  Maik Seewald
-      CISCO, USA
-      maseewal@cisco.com
 
    o  Houda Labiod
       Telecom Paristech, France
