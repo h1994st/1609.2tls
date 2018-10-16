@@ -14,11 +14,11 @@ Expires: March 26, 2019                                Telecom ParisTech
 
 Abstract
 
-   This document specifies the use of two new certificate types to
-   authenticate TLS entities.  The first type enables the use of a
+   This document specifies the use of a new certificate type to
+   authenticate TLS entities.  The type enables the use of a
    certificate specified by the Institute of Electrical and Electronics
-   Engineers (IEEE) [IEEE1609.2] and the second by the European
-   Telecommunications Standards Institute (ETSI) [TS103097].
+   Engineers (IEEE) and the European Telecommunications Standards 
+   Institute (ETSI).
 
 Status of This Memo
 
@@ -87,26 +87,21 @@ Table of Contents
 
 1.  Introduction
 
-   TLS protocol [RFC8446] [RFC5246] uses X509 and Raw Public Key in
+   The TLS protocol [RFC8446] [RFC5246] uses X509 and Raw Public Key in
    order to authenticate servers and clients.  This document describes
    the use of certificates specified either by the Institute of
    Electrical and Electronics Engineers (IEEE) [IEEE1609.2] or the
    European Telecommunications Standards Institute (ETSI) [TS103097].
-   It is worth to mention that ETSI TS 103097 certificate is a profile of
-   IEEE 1609.2 certificate and it has the same data structure.  These
+   It is worth mentioning that the ETSI TS 103097 certificate is a profile 
+   of IEEE 1609.2 certificate and uses  the same data structure.  These
    standards are defined in order to secure communications in vehicular
    environments.  Existing authentication methods, such as X509 and Raw
    Public Key, are designed for Internet use, particularly for
    flexibility and extensibility, and are not optimized for bandwidth
-   and processing time to support delay-sensitive applications.  This is
-   why size-optimized certificates are defined and standardized to
+   and processing time to support delay-sensitive applications.  That is
+   why size-optimized certificates were standardized by ETSI and IEEE to
    secure data exchange in highly dynamic vehicular environment in
    Intelligent Transportation System (ITS).
-
-   Two new values referring the previously mentioned certificates will
-   be added to the "client_certificate_type" and the
-   "server_certificate_type" extensions defined in [RFC7250].
-
 
 
 Kampanakis & Msahli      Expires March 26, 2019                 [Page 2]
@@ -122,16 +117,16 @@ Internet-Draft   IEEE and ETSI Certificate Types for TLS  September 2018
 
 3.  Extension Overview
 
-   To extend Client Hello and Server Hello messages, the
-   "extension_data" field of the ClientCertTypeExtension and the 
-   ServerCertTypeExtension structures defined in RFC7250 is used. 
+   This specification extends the Client Hello and Server Hello messages, 
+   by using the "extension_data" field of the ClientCertTypeExtension 
+   and the ServerCertTypeExtension structures defined in RFC7250. 
    In order to negotiate the support of IEEE 1609.2 or ETSI TS 
    103097 certificate-based authentication, the clients and the 
    servers MAY include the extension of type "client_certificate_type" 
    and "server_certificate_type" in the extended Client Hello and 
    "EncryptedExtensions".  The "extension_data" field of this 
    extension SHALL contain a list of supported certificate types 
-   proposed by the client as provided in figure below:
+   proposed by the client as provided in the figure below:
 
 
      /* Managed by IANA */
@@ -170,8 +165,8 @@ Kampanakis & Msahli      Expires March 26, 2019                 [Page 3]
 Internet-Draft   IEEE and ETSI Certificate Types for TLS  September 2018
 
 
-   In case where TLS server accepts the described extension, it selects
-   one of the certificate types in the extension described below.  Note
+   In case where the TLS server accepts the described extension, it selects
+   one of the certificate types in the extension described above.  Note
    that a server MAY authenticate the client using other authentication
    methods.
 
